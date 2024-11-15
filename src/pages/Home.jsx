@@ -49,7 +49,7 @@ function Home() {
       <TitleCards4/>
      <TitleCards5/>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
