@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+html::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.mask-gradient-right {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+  mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.grid-cols-auto-4 {
+  grid-template-columns: auto auto auto auto;
+}
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+} 
+
+.nav-dark {
+  background-color: #141414b0 ;
+}
