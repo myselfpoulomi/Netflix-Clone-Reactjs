@@ -13,7 +13,9 @@ html::-webkit-scrollbar {
 .mask-gradient-right {
   -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
   mask-image: linear-gradient(to right, transparent, black 75%);
-}
+} 
+
+
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;

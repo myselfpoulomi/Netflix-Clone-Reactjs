@@ -10,16 +10,25 @@ import TitleCards2 from "../Components/TitleCards2";
 import TitleCards5 from "../Components/TitleCards5";
 import TitleCards3 from "../Components/TitleCards3";
 import TitleCards4 from "../Components/TitleCards4";
+import hero_banner2 from "../assets/hero_banner2.jpg";
+
 function Home() {
   return (
     <div>
       <Nav />
       <div className="relative">
-        <img
+        <img 
           src={hero_banner}
+          alt=""
+          className="w-[100%] mask-gradient-right h-[900px] object-cover hidden md:block"
+        />
+
+<img 
+          src={hero_banner2}
           alt=""
           className="w-[100%] mask-gradient-right h-[900px] object-cover"
         />
+
         <div className="absolute w-[100%] pl-[6%] bottom-0  ">
           <img
             src={hero_title}
@@ -44,12 +53,13 @@ function Home() {
         </div>
       </div>
       <div className="pl-[6%] ">
+      
       <TitleCards2 />
       <TitleCards3/>
       <TitleCards4/>
      <TitleCards5/>
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
